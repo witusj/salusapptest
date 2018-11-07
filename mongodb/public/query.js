@@ -6,7 +6,6 @@ function getData() {
     var url = api_path + naam
     console.log(naam)
     console.log(url)
-
     fetch(url)
       .then((res) => { return res.json() })
       .then((data) => {
@@ -24,7 +23,7 @@ function getData() {
                        <hr />
                    </ul>
                 </div>`;
-                  document.getElementById('result').innerHTML = result;
+                  document.getElementById('result').innerHTML = result; //!! Test outside foreach
               });
     })
 }

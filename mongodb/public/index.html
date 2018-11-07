@@ -17,16 +17,21 @@
         <button class="btn btn-warning btn-lg m-2">Zoek naam</button>
       </div>
     </form> -->
-    
+
     <form>
       <div>
         <label class="m-2" for="search">Zoek gegevens</label>
         <input class="form-control m-2" placeholder="Voer naam in" id="searchString">
       </div>
-      <div>
-        <button class="btn btn-warning btn-lg m-2" id="getData">Zoek naam</button>
-      </div>
     </form>
+    
+    <!-- Plaats de button buiten het formulier. De query data blijft binnen de scope van de functie
+    en die weer binnen de scope van het parent element.
+    -->
+    <div>
+      <button class="btn btn-warning btn-lg m-2" id="getData">Zoek naam</button>
+    </div>
+
 
 
 
